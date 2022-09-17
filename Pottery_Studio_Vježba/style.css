@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 1.9rem;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 1.5;
+  margin-top: 1.2rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+header ul {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header ul li a:hover {
+  color: red;
+}
+
+.active {
+  color: #478ac9;
+}
+
+/* ovim dijelom sam uredio sekciju 1 ispod headera */
+
+.section1 {
+  background-image: url(landscape.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  border-bottom: 0.9rem solid #111111;
+}
+
+.section1-text {
+  flex-basis: 40%;
+  margin-right: 45%;
+}
+
+.section1-text p {
+  line-height: 1.6;
+  margin-top: 1.2rem;
+}
+
+.btn1 {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #478ac9;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 10px 34px 10px 33px;
+  margin: 30px auto 50px 0;
+  font-weight: 700;
+}
+
+.btn1:hover {
+  background-color: #387cbd;
+  color: #e6e6e6;
+}
+
+/*ovdje završava sekcija 1 i kreće sekcija2*/
+
+.section2 {
+  display: flex;
+  height: 85vh;
+}
+
+.section2 .section2-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  /*justify-content:center;*/
+}
+
+.section2-content p,
+.section2-content h2,
+.section2-content a {
+  text-align: center;
+}
+
+.section2-content:nth-child(1) {
+  background-color: #f1c50e;
+}
+.section2-content:nth-child(1) h2,
+.section2-content:nth-child(1) p {
+  color: #111111;
+}
+.section2-content:nth-child(2) {
+  background-color: #db545a;
+}
+
+.section2-content p {
+  margin-top: 30px;
+  padding: 0 3rem;
+}
+
+.btn2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #adcce9;
+  color: #000000;
+  font-weight: 900;
+  font-size: 0.875rem;
+  padding: 10px 30px;
+  margin: 30px auto 0;
+  display: inline-block;
+}
+
+.btn2:hover {
+  background-color: #8db8e0;
+  color: #ffffff;
+}
+
+.hor-rule {
+  border: none;
+  width: 4rem;
+  height: 4px;
+  background-color: #478ac9;
+  margin: 30px auto 0;
+}
+
+/*Ovdje završava druga sekcija*/
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25rem;
+}
+
+.section3-left {
+  flex: 1 1 33%;
+  display: flex-start;
+  padding: 3rem;
+  background-color: #2cccc4;
+  color: rgb(218, 216, 216);
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3-right {
+  flex: 1 1 67%;
+  background-image: url(wind.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.p2 {
+  margin-right: 3rem;
+}
+
+.hor-rule2 {
+  border: none;
+  width: 4rem;
+  height: 4px;
+  background-color: #478ac9;
+  margin: 30px 0px 30px;
+  align-items: flex-start;
+}
+
+/*Slici ne moras onda dodat klasu
+
+.section3-content{
+  flex-basis: 0 0 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+
+.section3-img{
+  flex-basis: 0 0 67%;
+  min-width: 67%;
+  max-height: 67%;
+}
+
+section3{
+  background-color:
+}
+*/
+
+/*Ovdje završava 3. sekcija */
+
+.section4 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25rem;
+  padding-top: 200px;
+}
+
+.section4-left {
+  flex: 1 1 67%;
+  background-image: url(abstract.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section4-right {
+  flex: 1 1 30%;
+  display: flex-start;
+  padding: 3rem;
+  background-color: #f1c50e;
+  color: #111111;
+}
+
+.p3 {
+  color: #111111;
+}
+
+/*Ovdje završava sekcija 4*/
+
+.section5 {
+  height: 23rem;
+  margin-top: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #2cccc4;
+}
+
+.section5-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+/*Sekcija 5 gotova*/
+
+.section6 {
+  justify-content: center;
+  background-color: #2cccc4;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.section6 img {
+  height: 340px;
+  margin-top: 2rem;
+}
+
+.product h3 {
+  margin: 1.9rem 1.2rem 0;
+}
+
+.product h3 {
+  margin: 0.85rem 1.2rem 0;
+}
+
+/*ZAvršena sekcija 6*/
+
+.section7 {
+  background-color: #2cccc4;
+  text-align: center;
+}
+
+.section7 .btn2 {
+  margin-bottom: 3rem;
+}
+
+/*Završena sekcija 7*/
+
+.section8 {
+  background-image: url(zalianruka.jpg);
+  display: flex;
+  background-size: cover;
+  height: 90vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section8-content {
+  background-color: #2cccc4;
+  flex-basis: 50%;
+  bottom: -6rem;
+  margin-right: 16rem;
+  position: relative;
+  padding: 4rem;
+}
+
+.section8-content p {
+  margin-right: 4rem;
+  margin-top: 2rem;
+}
+
+.section8-content hr {
+  margin-left: 0;
+}
+
+.section8 span {
+  background-color: #478ac9;
+  padding: 25px;
+  border-radius: 50%;
+}
+
+svg {
+  fill: #fff;
+}
+
+/*Sekcija 8 govotva?*/
+
+.section9 {
+  background-color: #db545a;
+  padding-top: 12.5rem;
+  text-align: center;
+}
+
+.section9-content p {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+
+input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(255 255 255 0.5);
+}
+
+input:nth-child(1) {
+}
+
+input:nth-child(2) {
+  border: none;
+  border-radius: 0;
+}
+
+.input-field {
+  background: transparent;
+}
+
+footer {
+  background-color: #111111;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+footer p {
+  font-size: 0.875rem;
+}

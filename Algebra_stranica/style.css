@@ -1,0 +1,199 @@
+:root {
+  --pozadina: #f4f4f4;
+}
+/*Za zalijepiti footer na dno, html:100%, body: min-height:100%*, display:flex, flex-direction: column, footer: margin-top:auto*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Saira", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--pozadina);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  background-color: #35424a;
+  display: flex;
+  min-height: 4rem;
+  border-bottom: #e8491d 3px solid;
+}
+
+h3 {
+  align-items: center;
+}
+
+.logo {
+  width: 6rem;
+  padding-bottom: 0.6rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+header .container ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #ccc;
+  font-weight: bold;
+}
+
+.naranca {
+  color: #e8491d;
+}
+
+#showcase {
+  min-height: 25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(laptop.jpg);
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  color: #ffff;
+}
+
+h1,
+h1 span {
+  font-size: 4rem;
+}
+
+#newsletter {
+  background-color: #35424a;
+}
+
+#newsletter .container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.btn1 {
+  background-color: #e8491d;
+  cursor: pointer;
+  color: #fff;
+  padding: 2px 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+#newsletter input[type="email"] {
+  outline: none;
+  width: 15rem;
+}
+
+input[type="email"]::placeholder {
+  color: #000;
+}
+
+/*Slijedi sekcija sa slikama*/
+
+#boxes .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.kutija {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.kutija > * {
+  text-align: center;
+}
+
+.kutija img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*Slijedi footer*/
+
+footer {
+  background-color: #e8491d;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  margin-top: auto;
+}
+
+/*Počinjemo sa drugom stranicom - O nama*/
+
+#main .container {
+  display: flex;
+  gap: 1rem;
+}
+
+article {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+  flex-basis: 30%;
+  background-color: #35424a;
+  color: #fff;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.7rem 0;
+  padding: 1rem;
+}
+
+article h1 {
+  font-size: 3rem;
+}
+
+aside h2 {
+  font-size: 1.7rem;
+}
+
+article p {
+  padding-top: 1rem;
+}
+
+aside input,
+aside textarea {
+  width: 90%;
+  padding: 0.3rem;
+  margin: 0.4rem;
+}
+
+#kontejneri {
+  padding: 1rem;
+  background-color: #eee;
+  margin-top: 0.3rem;
+}
